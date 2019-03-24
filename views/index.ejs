@@ -1,0 +1,41 @@
+  <%- include('partials/header'); -%>
+  <div class="container-fluid">
+    <div class="row title">
+
+      <div class="col-lg-3 filler">filler</div>
+      <div class="col-lg-6">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4"><%= title%></h1>
+            <p class="lead">This will calculate the taxes based on the tip percentage you enter below</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3 filler">filler</div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <!-- 1 of 3 -->
+      </div>
+      <div class="col-lg-6">
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="bill">Bill</label>
+            <input type="number" name="bill" class="form-control" placeholder="How much was the Bill" />
+          </div>
+          <div class="form-group">
+            <label for="tip">Tip</label>
+            <input type="number" name="tip" class="form-control" placeholder="Enter tip percentage" />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-lg-3">
+        <!-- 3 of 3 -->
+      </div>
+    </div>
+  </div>
+  <%- include('partials/footer'); -%>
